@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /vendor
 /node_modules
 /public/storage
@@ -20,4 +19,3 @@ storage/
 .env.php
 .env
 .env.example
->>>>>>> c0339e4877d10662affa2dd8904fd401a23d16b1
