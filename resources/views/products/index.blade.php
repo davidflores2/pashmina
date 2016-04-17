@@ -1,6 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
     <div class="page-header clearfix">
         <h1>
             <i class="glyphicon glyphicon-align-justify"></i> Products
@@ -33,7 +36,7 @@
                                 <td>{{$product->name}}</td>
                     <td>{{$product->description}}</td>
                     <td>{{$product->price}}</td>
-                    <td>{{$product->countryoforigin}}</td>
+                    <td>{{$product->countryOfOrigin}}</td>
                                 <td class="text-right">
                                     <a class="btn btn-xs btn-primary" href="{{ route('products.show', $product->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
                                     <a class="btn btn-xs btn-warning" href="{{ route('products.edit', $product->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>
@@ -54,5 +57,8 @@
 
         </div>
     </div>
+</div>
+</div>
+</div>
 
 @endsection

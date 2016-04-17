@@ -83,7 +83,8 @@
             </div>
         </div>
     </nav>
-
+    
+    @yield('header')
     @yield('content')
 
     <!-- JavaScripts -->

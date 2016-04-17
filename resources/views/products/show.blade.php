@@ -1,5 +1,8 @@
-@extends('layout')
+@extends('layouts.app')
 @section('header')
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
 <div class="page-header">
         <h1>Products / Show #{{$product->id}}</h1>
         <form action="{{ route('products.destroy', $product->id) }}" method="POST" style="display: inline;" onsubmit="if(confirm('Delete? Are you sure?')) { return true } else {return false };">
@@ -35,8 +38,8 @@
                      <p class="form-control-static">{{$product->price}}</p>
                 </div>
                     <div class="form-group">
-                     <label for="countryoforigin">COUNTRYOFORIGIN</label>
-                     <p class="form-control-static">{{$product->countryoforigin}}</p>
+                     <label for="countryOfOrigin">COUNTRYOFORIGIN</label>
+                     <p class="form-control-static">{{$product->countryOfOrigin}}</p>
                 </div>
             </form>
 
@@ -44,5 +47,5 @@
 
         </div>
     </div>
-
+</div></div></div>
 @endsection

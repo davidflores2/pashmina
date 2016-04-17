@@ -154,7 +154,7 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Laralib\L5scaffold\GeneratorsServiceProvider::class
+        //Laralib\L5scaffold\GeneratorsServiceProvider::class
       ],
 
         /**
@@ -214,7 +214,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-  "Laralib\L5scaffold\GeneratorsServiceProvider"
+  //"Laralib\L5scaffold\GeneratorsServiceProvider"
     ],
 
 ];
