@@ -65,6 +65,9 @@
   padding: 20px;
   box-shadow: 3px 3px 5px 0px #eeeeee; }
 
+.a img {
+  width: 100px; }
+
 .product-detail {
   text-align: center; }
   .product-detail img {
