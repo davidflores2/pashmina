@@ -147,7 +147,6 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
         /*
          * Application Service Providers...
          */
@@ -155,7 +154,22 @@ return [
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-    ],
+        //Laralib\L5scaffold\GeneratorsServiceProvider::class
+      ],
+
+        /**
+         *
+         */
+    //     class ClassName extends AnotherClass
+    //     {
+    //
+    //       function __construct(argument)
+    //       {
+    //         # code...
+    //       }
+    //     }
+    //
+    // ],
 
     /*
     |--------------------------------------------------------------------------
@@ -200,7 +214,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+  //"Laralib\L5scaffold\GeneratorsServiceProvider"
     ],
 
 ];
