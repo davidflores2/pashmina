@@ -14,18 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::auth();
-
-Route::get('about', function()
-    {
-        return View::make('about');
-    });
-
-Route::get('pashminaproject', function()
-    {
-        return View::make('pashminaproject');
-    });
-
-Route::get('/home', 'HomeController@index');
-Route::resource('products', 'ProductController');
