@@ -28,3 +28,4 @@ Route::get('pashminaproject', function()
     });
 
 Route::get('/home', 'HomeController@index');
+Route::get('/checkout', 'HomeController@checkout');

@@ -14,7 +14,11 @@
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
+    <script type="text/javascript">
+      function onVisaCheckoutReady(){
+        V.init({ apikey: "78ARTH7VRYEZNRLADVDO21V2JUYo7Tdme0OqYmaXSQnVD7P_U"});
+      }
+    </script>
     <style>
         body {
             font-family: 'Lato';
@@ -85,6 +89,14 @@
     <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://sandbox-assets.secure.checkout.visa.com/checkout-widget/resources/js/integration/v1/sdk.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script type="text/javascript">
+      $( document ).ready(function() {
+        V.on("payment.success", function(payment) {alert(JSON.stringify(payment)); });
+        V.on("payment.cancel", function(payment) {alert(JSON.stringify(payment)); });
+        V.on("payment.error", function(payment,error){alert(JSON.stringify(error));});
+      });
+    </script>
 </body>
 </html>
