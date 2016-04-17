@@ -30,3 +30,4 @@ Route::get('pashminaproject', function()
 Route::get('/home', 'HomeController@index');
 Route::get('/checkout', 'HomeController@checkout');
 Route::resource('products', 'ProductController');
+Route::post('/orders', 'HomeController@orders');
