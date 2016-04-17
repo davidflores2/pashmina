@@ -1,6 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
     <div class="page-header">
         <h1><i class="glyphicon glyphicon-edit"></i> Products / Edit #{{$product->id}}</h1>
     </div>
@@ -39,9 +42,9 @@
                     </div>
                     <div class="form-group @if($errors->has('countryoforigin')) has-error @endif">
                        <label for="countryoforigin-field">CountryOfOrigin</label>
-                    <input type="text" id="countryoforigin-field" name="countryoforigin" class="form-control" value="{{ $product->countryoforigin }}"/>
-                       @if($errors->has("countryoforigin"))
-                        <span class="help-block">{{ $errors->first("countryoforigin") }}</span>
+                    <input type="text" id="countryoforigin-field" name="countryOfOrigin" class="form-control" value="{{ $product->countryOfOrigin }}"/>
+                       @if($errors->has("countryOfOrigin"))
+                        <span class="help-block">{{ $errors->first("countryOfOrigin") }}</span>
                        @endif
                     </div>
                 <div class="well well-sm">
@@ -52,4 +55,5 @@
 
         </div>
     </div>
+    </div></div></div>
 @endsection

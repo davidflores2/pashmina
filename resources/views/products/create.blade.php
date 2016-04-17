@@ -1,6 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('header')
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
     <div class="page-header">
         <h1><i class="glyphicon glyphicon-plus"></i> Products / Create </h1>
     </div>
@@ -8,9 +11,6 @@
 
 @section('content')
     @include('error')
-
-    <div class="row">
-        <div class="col-md-12">
 
             <form action="{{ route('products.store') }}" method="POST">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -48,7 +48,7 @@
                     <a class="btn btn-link pull-right" href="{{ route('products.index') }}"><i class="glyphicon glyphicon-backward"></i> Back</a>
                 </div>
             </form>
-
+            </div>
         </div>
     </div>
 @endsection
