@@ -17,14 +17,31 @@ Route::get('/', function () {
 
 Route::auth();
 
+
 Route::get('about', function()
     {
         return View::make('about');
     });
+
 
 Route::get('pashminaproject', function()
     {
         return View::make('pashminaproject');
     });
 
+/**
+
+Route::get('/about', 'StaticController@index');
+
+Route::get('/pashminaproject', 'StaticController@index');
+*/
+
 Route::get('/home', 'HomeController@index');
+
+
+Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback');
+
+Route::get('home', array('as' => 'home', 'uses' => function(){
+  return view('home');
+}));

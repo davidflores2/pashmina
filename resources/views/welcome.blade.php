@@ -15,3 +15,13 @@
     </div>
 </div>
 @endsection
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title"></div>
+            
+            <a class="btn btn-info" href="auth/facebook" role="button">Login with Facebook</a>
+        </div>
+    </div>
+</body>

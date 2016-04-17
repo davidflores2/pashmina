@@ -23,4 +23,18 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-}
+    
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('facebook_id')->unique();
+            $table->string('avatar');
+            $table->rememberToken();
+            $table->timestamps();
+        });
+        }
+    }
+
