@@ -1,2 +1,107 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$primary: #FFA116;
+$primary-dark: #CC8112;
+$primary-light: #FFC062;
 
+body{
+	margin-bottom: 100px;
+}
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-default .navbar-brand{
+	color: #000;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #000;
+}
+.btn-primary{
+	background-color: $primary;
+	border-color: $primary;
+	&:hover{
+		background-color: $primary-light;
+		border-color: $primary-light;
+	};
+}
+.btn{
+	padding: 9px 50px;
+}
+.logo{
+	text-align: center;
+	img{width: 320px;}
+	h2{
+		text-transform: lowercase;
+		font-family: Helvetica;
+		font-weight: bold;
+		font-size: 3em;
+		position: relative;
+		top: -85px;
+	}
+	p{
+		font-family: Helvetica;
+		font-size: 16px;	
+		position: relative;
+		top: -85px
+	}
+}
+.hero{
+	background-image: url('/assets/imgs/weave_map.jpg');
+	background-size: cover;
+	height: 300px;
+}
+.cta{
+	position: relative;
+	top: -50px;
+}
+
+.content{
+	text-align: center;
+	p{
+		font-size: 16px;
+		line-height: 1.6;
+		position: relative;
+		margin: 0 auto;
+	}
+}
+
+.about{
+	p, strong{
+		font-size: 16px;
+	}
+}
+
+.sign-up{
+	h2{
+		text-align: center;
+		padding-bottom: 10px;
+	}
+}
+.form{
+	background: #eee;
+	padding: 20px;
+	-webkit-box-shadow: 3px 3px 5px 0px rgba(238,238,238,1);
+	-moz-box-shadow: 3px 3px 5px 0px rgba(238,238,238,1);
+	box-shadow: 3px 3px 5px 0px rgba(238,238,238,1);
+}
+.a img{
+	width: 100px;
+}
+.product-detail{
+	text-align: center;
+	img{
+		clear: both;
+	}
+	.price{
+		position: relative;
+		left: 464px;
+		font-weight: bold;
+	}
+	.cta{
+		position: relative;
+		left: 460px;
+	}
+	strong{
+		margin-top: 10px;
+	}
+}
